@@ -1,0 +1,24 @@
+<div class="calculator">
+  <div class="display">{{ display }}</div>
+  <div class="keypad">
+    <button (click)="onClearClick()" class="btn-clear">C</button>
+    <button (click)="onClearClick()" class="btn-clear">CE</button>
+    <button (click)="onOperatorClick('/')" class="btn-operator">/</button>
+    <button (click)="onOperatorClick('*')" class="btn-operator">*</button>
+    <button (click)="onNumberClick('7')" class="btn-number btn-7">7</button>
+    <button (click)="onNumberClick('8')" class="btn-number btn-8">8</button>
+    <button (click)="onNumberClick('9')" class="btn-number btn-9">9</button>
+    <button (click)="onOperatorClick('-')" class="btn-operator">-</button>
+    <button (click)="onNumberClick('4')" class="btn-number btn-4">4</button>
+    <button (click)="onNumberClick('5')" class="btn-number btn-5">5</button>
+    <button (click)="onNumberClick('6')" class="btn-number btn-6">6</button>
+    <button (click)="onOperatorClick('+')" class="btn-operator">+</button>
+    <button (click)="onNumberClick('1')" class="btn-number btn-1">1</button>
+    <button (click)="onNumberClick('2')" class="btn-number btn-2">2</button>
+    <button (click)="onNumberClick('3')" class="btn-number btn-3">3</button>
+    <button class="btn-backspace" (click)="backspace()">⌫</button>
+    <button class="btn-decimal" (click)="onDecimalClick()">.</button>
+    <button (click)="onNumberClick('0')" class="btn-number btn-0">0</button>
+    <button (click)="onEqualsClick()" class="btn-equals">=</button>
+  </div>
+</div>
